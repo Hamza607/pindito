@@ -1,0 +1,607 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.MainParent_div {
+  max-width: 1340px;
+}
+.BackgroundColor {
+  background-color: #d9edf3;
+  min-height: 100vh;
+}
+.Btn_maindiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #01a5b9;
+  background-color: #fff;
+  border-radius: 99px;
+  padding: 4px 16px 4px 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.Text_p {
+  font-size: 0.875rem;
+}
+p {
+  margin: 0;
+}
+.Heading_card {
+  font-weight: 700;
+  font-size: calc(0.65359vw + 0.977rem);
+}
+.main_div {
+  width: 242px;
+  margin-bottom: 10px;
+}
+.Btn_maindiv::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 4px;
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  border: 2px solid #d9edf3;
+  border-radius: 100%;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input[type="checkbox"] {
+  display: none; /* Hides the checkbox itself */
+}
+
+/* When the checkbox is checked, change the label's background color */
+input[type="checkbox"]:checked + .Btn_maindiv {
+  background-color: #01a5b9;
+  color: #fff;
+  border-color: #01a5b9;
+}
+
+input[type="checkbox"]:checked + .Btn_maindiv::before {
+  background-color: white;
+  border-color: #01a5b9;
+  background-image: url("./tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.year_btn {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #01a5b9;
+  border-radius: 99px;
+  padding: 12px 64px;
+  margin-top: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: calc(0.98039vw + 1.466rem);
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background-color: #85d1dd;
+  }
+}
+.sort_label {
+  color: #01a5b9;
+}
+.border_right {
+  border-right: 1px solid #01a5b9;
+}
+
+.select_box {
+  background-color: transparent;
+  font-weight: 700;
+  border: 0px solid transparent;
+  option {
+    font-weight: 700;
+  }
+}
+.year_checkbox {
+  display: none;
+}
+
+.year_checkbox:checked + .year_btn {
+  color: white;
+  background-color: #01a5b9;
+}
+.date_text {
+  font-size: 36px;
+  font-weight: 700;
+}
+.Night_text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #01a5b9;
+}
+.label__text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #01a5b9;
+}
+.Full_text {
+  color: #ff3d46;
+  font-weight: 700;
+}
+.spot_text {
+  font-size: 20px;
+  margin-left: 12px;
+}
+.Spot_number {
+  color: white;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01a5b9;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.width__foryear{
+  width: 90%;
+}
+.Date_div {
+  margin: 80px 40px;
+}
+.Card_timing {
+  border: 2px solid #01a5b9;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24;
+}
+.booknow_btn {
+  background-color: #01a5b9;
+  color: white;
+  border: 1px solid #01a5b9;
+  padding: 20px;
+  width: 100%;
+}
+.color_blue {
+  color: #01a5b9;
+}
+.readmore_btn {
+  border-radius: 40px;
+  background-color: #01a5b9;
+  padding: 15px;
+  display: block;
+  margin-inline: auto;
+  border: 1px solid #01a5b9;
+  color: white;
+  transform: scale(1);
+  transition: all 0.3s ease, color 0.3s ease;
+  &:hover {
+    background-color: #00637a;
+    transform: scale(1.08);
+  }
+}
+.verticle_line {
+  margin-inline: auto;
+  width: 2px;
+  height: 120px;
+  background-color: #01a5b9;
+}
+.font_24 {
+  font-size: 24px;
+}
+.spot_text_request {
+  font-size: 20px;
+  margin-left: 12px;
+  color: #ffa94e;
+}
+.Spot_number_request {
+  color: white;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa94e;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.person_text {
+  color: #8096a1;
+}
+.cardEnd {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.font_36 {
+  font-size: 36px;
+}
+.cardEnd::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  top: 0;
+  right: 0;
+  background-color: #ff3d46;
+  height: 100%;
+  transition: all 0.5s;
+}
+.zindex {
+  z-index: 99;
+}
+.Hover_effect_card {
+  height: fit-content;
+  
+  box-shadow: 0px 0px 10px rgba(120, 119, 119, 0.312);
+}
+.Hover_effect_card:hover .cardEnd::after {
+  width: 100%;
+}
+.cardimage {
+  transform: scale(1);
+  object-fit: cover;
+  width: 250px;
+  height: 100% !important;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.Hover_effect_card:hover .cardimage {
+  transform: scale(1.3); /* Zoom on hover */
+}
+
+.avail {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #01a5b9;
+}
+.reser {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #ffcc5c;
+}
+.occu {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #ff3f49;
+}
+.avail_text {
+  color: #01a5b9;
+  font-weight: 600;
+}
+.reser_text {
+  color: #ffcc5c;
+  font-weight: 600;
+}
+.occu_text {
+  color: #ff3f49;
+  font-weight: 600;
+}
+ul li {
+  position: relative;
+  list-style: circle;
+  margin-bottom: 5px;
+}
+ul li::marker {
+  color: #01a5b9;
+}
+.Maindiv__include {
+  width: 100%;
+  margin: 40px auto;
+}
+.Card__include {
+  border: 1px solid #b5c7ce;
+  height: 100%;
+}
+.heading_terms {
+  border: 1px solid #b5c7ce;
+}
+.card {
+  border-radius: 15px;
+}
+.same_btn {
+  width: 50px;
+  height: 50px;
+  background-color: #01a5b9;
+  border: 1px solid #01a5b9;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Counter_rate {
+  border: 2px solid #01a5b9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #01a5b9;
+  box-shadow: none;
+}
+.Select_country {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  outline: none;
+  transition: all 0.5s ease;
+  padding: 10px 0px;
+}
+
+.Select_country:focus {
+  border-bottom: 2px solid #01a5b9;
+  box-shadow: none;
+}
+
+.textarea {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  outline: none;
+  padding: 10px 0px;
+}
+
+.textarea:focus {
+  border-bottom: 4px solid #01a5b9;
+  box-shadow: none;
+  height: 200px;
+}
+.send_btn {
+  padding: 16px 64px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  position: relative;
+  display: inline-block;
+  width: 192px;
+  height: 62px;
+  border: 1px solid #ff3d46;
+  background-color: #ff3d46;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 99px;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #b6272e;
+  }
+}
+
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 2px rgba(119, 118, 118, 0.1); */
+  border: 1px solid rgba(119, 118, 118, 0.1);
+}
+
+.captcha-box {
+  text-align: center;
+}
+
+.captcha-header {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.captcha-header p {
+  text-align: start;
+}
+
+.captcha-button {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  width: 300px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.captcha-footer {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.captcha-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #888;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+.number_value {
+  font-family: "Rubik", sans-serif;
+}
+.MainDiv__cardss {
+  display: block;
+}
+
+@media only screen and (min-device-width: 678px) and (max-device-width: 992px) {
+  .MainDiv__cardss {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .Hover_effect_card {
+    width: 50%;
+  }
+  .Div__dropdown {
+    width: 48px;
+    height: 48px;
+    background-color: #ff3d46;
+    border-radius: 50%;
+  }
+  .Night_text {
+    margin-top: 10px;
+  }
+  .Full_text {
+    margin-top: 10px;
+  }
+  .border_right {
+    border-right: 1px solid transparent;
+  }
+  .date_text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Spot_number {
+    margin-left: 0;
+  }
+  .cardimage {
+    width: 100%;
+  }
+  .cardEnd::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100%;
+    display: none;
+    transition: all 0.5s;
+  }
+  .Spot_number_request {
+    margin-left: 0;
+  }
+  .year_btn {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #01a5b9;
+    border-radius: 99px;
+    margin-top: 20px;
+    padding: 12px 64px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: calc(0.98039vw + 1.466rem);
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background-color: #85d1dd;
+    }
+  }
+  .Date_div {
+    margin: 40px 20px;
+  }
+  .width__foryear{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 678px) {
+  .MainDiv__cardss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .width__foryear{
+    width: 100%;
+  }
+  .Date_div {
+    margin: 40px 20px;
+  }
+  .Spot_number {
+    margin-left: 0;
+  }
+  .Spot_number_request {
+    margin-left: 0;
+  }
+  .year_btn {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #01a5b9;
+    border-radius: 99px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 12px 64px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: calc(0.98039vw + 1.466rem);
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background-color: #85d1dd;
+    }
+  }
+  .Div__dropdown {
+    width: 48px;
+    height: 48px;
+    background-color: #ff3d46;
+    border-radius: 50%;
+  }
+  .Night_text {
+    margin-top: 10px;
+  }
+  .Full_text {
+    margin-top: 10px;
+  }
+  .border_right {
+    border-right: 1px solid transparent;
+  }
+  .date_text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cardimage {
+    width: 100%;
+  }
+  .cardEnd::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .year_btn {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #01a5b9;
+    border-radius: 99px;
+    margin-top: 20px;
+    padding: 12px 64px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: calc(0.98039vw + 1.466rem);
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background-color: #85d1dd;
+    }
+  }
+}
